@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header {
+                
+                padding: 10px;
+                text-align: center;
+                font-size: 36px;
+                font-weight:bold;
+                color:rgb(76, 58, 7);
+                background-color: #3ab4e1;
+                 
+                
+              }
+            body {
+               
+                background-color: #6299ff;
+                background-size: cover;
+                background-position: center;
+                
+    
+              }
+                nav {
+                 background-color: #000000;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+                 }
+    
+                 nav a {
+                    color: rgb(47, 133, 254);
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }                
+                nav a:hover {
+                    color: #580805;
+                }
+    
+                img {
+                    float: left;
+                    margin-left: 5cm;
+                    width:450px;
+                }
+
+               
+            </style>
+        <header>
+        <h1>Sign Up</h1> 
+        </header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="mountainbike.html">Mountain Bikes</a>
+            <a href="roadbike.html">Road Bikes</a>
+            <a href="hybrid.html">Hybrid Bikes</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Sign up</a>
+        </nav>
+        <br>
+        <br>
+        <br>
+        
+        <form id="myForm">
+            
+        <label for="name">Name:</label> 
+        <input type="text" id="name" name="name" maxlength="20">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" maxlength="20" placeholder="example@email.com" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" maxlength="20" required>
+        <br>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+        <br> 
+    </form>
+    <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        if (name === '' || email === '' || password === '') {
+            event.preventDefault();
+            if (name === '') {
+            document.getElementById("name").setCustomValidity("Please fill out this field.");
+             } else {
+            document.getElementById("name").setCustomValidity("");
+             }
+            if (email === '') {
+                document.getElementById("email").setCustomValidity("Please fill out this field.");
+            } else {
+                document.getElementById("email").setCustomValidity("");
+            }
+            if (password === '') {
+                document.getElementById("password").setCustomValidity("Please fill out this field.");
+            } else {
+                document.getElementById("password").setCustomValidity("");
+            }
+        }
+    });
+    
+    document.getElementById("myForm").addEventListener("reset", function(event) {
+        document.getElementById("name").setCustomValidity("");
+        document.getElementById("email").setCustomValidity("");
+        document.getElementById("password").setCustomValidity("");
+    });
+    </script>
+            </head>
+        </body>
+    </html>

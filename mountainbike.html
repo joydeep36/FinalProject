@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            header {
+                background-color: #10a7d4;
+                padding: 10px;
+                text-align: center;
+                font-size: 36px;
+                font-weight:bold;
+                
+                 
+                
+              }
+            body {
+                
+                background-color: rgb(105, 105, 102);
+                background-size: cover;
+                background-position: center;
+                
+
+              }
+              nav {
+                 background-color: #090909;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+                 }
+  
+                 nav a {
+                    color: rgb(255, 255, 255);
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }                
+                nav a:hover {
+                    color: #10a7d4;
+                }
+
+               
+                 aside { 
+                    background-color: #f1cd68;
+                    width: 400px;
+                    height: 600px;
+                    padding-bottom: 20px;
+                    float: right ;
+                    border-left: 2px solid #ef9c00;
+                    color: rgb(0, 0, 0);
+                    font-weight: bold;
+                    font-size: larger;
+                    margin-right: 5px;
+                    
+                
+                    
+                }
+
+                #div1 {
+                    float: right;
+                }
+
+
+                .bike {
+                    background-color: #fff;
+                    float: left;
+                    position: relative;
+                    top: 20px;
+                    left: 40px;
+                }
+
+                .bike1 {
+                    background-color: #fff;
+                    float: left;
+                    position: absolute;
+                    top: 740px;
+                    left: 40px;
+                    
+                }
+                .bike2 {
+                    background-color: #fff;
+                    float: left;
+                    margin: 0 auto;
+                    margin-left: 2cm
+                }
+                 .bike1 .img1{
+                    width: 200px;
+                }
+                .bike1 .img3{
+                    width: 400px;
+                }
+
+                .bike2 .img1{
+                    width: 200px;
+                }
+                 .bike .img1 {
+                    width: 200px;
+                }
+
+                .bike .img2 {
+                    width: 400px;
+                }
+
+        
+         </style>
+     </head>
+     <body>
+        <header>
+            <h1>Mountain Bikes</h1>
+        </header>
+
+
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="mountainbike.html">Mountain Bikes</a>
+            <a href="roadbike.html">Road Bikes</a>
+            <a href="hybrid.html">Hybrid Bikes</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Sign up</a>
+        </nav>
+        <br>
+        <br>
+        
+        <div class="bike">
+        <img class="img2" src="Screenshot 2023-04-14 131223.png" >
+                <br>
+                <h4><strong>Rocky Mountain Growler 50</strong></h4>
+                          <h5>$1,199.00 CAD</h5>
+                <img class="img1" src="OIP (5).jpg">
+        </div>
+        <br>
+        <br>
+        <div class="bike1">
+            <img class="img3" src="Screenshot 2023-04-14 132500.png" >
+                    <br>
+                    <h4><strong>Rocky Mountain Element Alloy 50</strong></h4>
+                              <h5>$2,899.00 CAD</h5>
+                    <img class="img1" src="OIP (5).jpg">
+            </div>
+        <br>
+        <br>
+        <br>
+            <div class="bike2">
+            <img src="download (90).jpg">
+                <br>
+                <br>
+                <h4><strong>Rocky Mountain Instinct Alloy 30</strong></h4>
+                          <h5>$2,599.00 CAD</h5>
+                <img class="img1" src="OIP (5).jpg">
+                </div>
+        
+        <div id="div1">
+        <aside id="sidebar">
+            <h3>Selection</h3>
+             <form>
+             <label for="sBike">Select Bike</label>
+            <input type="text" name="sBikes" id="sBike" list="bikes">
+            <datalist id="bikes">
+                <option value="Rocky Mountian Growler 50"></option>
+                <option value="Instinct Alloy 30"></option>
+                <option value="Element Alloy 50"></option>
+           
+            </datalist> 
+             </form>
+        <table border="9">
+             
+             <br>
+             <br>
+            <tr>
+            <th>Height</th>
+            <th>Frame Size</th>
+            </tr>
+            <tr>
+                <td>4'10-5'2</td>
+                <td>XSmall</td>
+            </tr>
+            <tr>
+                <td>5'2-5'6</td>
+                <td>Small</td>
+            </tr>
+            <tr>
+                <td>5'6-5'10</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>5'10-6'1</td>
+                <td>Large</td>
+            </tr>
+            <tr>
+                <td>6'1-6'4</td>
+                <td>XLarge</td>
+            </tr>
+            </table>
+            
+            <form>
+            <br>
+            <br>
+            <label for="size">Select Size</label>
+            <input type="text" name="size" id="size" list="sizes">
+            <datalist id="sizes">
+                <option value="XSmall"></option>
+                <option value="Small"></option>
+                <option value="Medium"></option>
+                <option value="Large"></option>
+                <option value="XLarge"></option>
+            </datalist>
+            <br>
+            <br>
+            <br>
+            <label for="color">Choose your frame color:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <br>
+            <br>
+            <caption><strong>Wheel Size:</strong></caption>
+            <br>
+            <br>
+            <label for="wheelSize">26":</label>
+            <input type="checkbox" name="size" id="size" value="26">
+            <br>
+            <label for="wheelSize">27.5":</label>
+            <input type="checkbox" name="size" id="size" value="27.5">
+            <br>
+            <label for="wheelSize">29":</label>
+            <input type="checkbox" name="size" id="size" value="29">
+            <br>
+            <br>
+            <input type="submit" name="Sbutton" id="Sbutton" value="Submit">
+            <input type="reset" name="Rbutton" id="Rbutton" value="Reset">
+        </aside>
+    </div>
+        </form>
+     </body>
+</html>

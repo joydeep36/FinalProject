@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        header {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 36px;
+            font-weight:bold;
+            color:rgb(0, 0, 0);
+             
+            
+          }
+        body {
+            
+            background-color: rgb(105, 105, 102);
+            background-size: cover;
+            background-position: center;
+            
+
+          }
+          nav {
+             background-color: #555;
+              color: #fff;
+              padding: 10px;
+              text-align: center;
+             }
+
+             nav a {
+                color: rgb(54, 213, 6);
+                padding: 5px 10px;
+                text-decoration: none;
+                font-weight: bold;
+            }                
+            nav a:hover {
+                color: #10a7d4;
+            }
+        
+             aside { 
+                background-color: beige;
+                width: 400px;
+                height: 625px; 
+                float: right ;
+                border-left: 4px solid #ef9c00;
+                color: rgb(11, 11, 11);
+                font-weight: bold;
+                font-size: larger;
+                margin-right: 20px;
+                
+                
+            }
+
+            .bike .img1 {
+                    width: 200px;
+                }
+            .bike .img2 {
+                width: 400px;
+            }
+            
+
+                .bike {
+                    background-color: #fff;
+                    float: left;
+                    position: relative;
+                    top: 20px;
+                    left: 40px;
+                    width: 400px;
+
+                }
+                .bike2 .img1{
+                    width: 200px;
+                }
+                .bike2 .img2{
+                    width: 400px;
+                }
+
+                .bike2 {
+                    background-color: #fff;
+                    float: left;
+                    position: absolute;
+                    top: 780px;
+                    left: 40px;
+                }
+     </style>
+</head>
+       <body>
+        <header>
+            <h1>Road Bikes</h1>
+        </header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="mountainbike.html">Mountain Bikes</a>
+            <a href="roadbike.html">Road Bikes</a>
+            <a href="hybrid.html">Hybrid Bikes</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Sign up</a>
+        </nav>
+        <div class="bike2">
+            <img class="img2" src="OIP.jpg" >
+                    <br>
+                    <h4><strong>Trek Domane SLR 6 Gen 4</strong></h4>
+                              <h5>$1,599.99 CAD</h5>
+                    <img class="img1" src="OIP (5).jpg">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="bike">
+            <img class="img2" src="OIP (2).jpg" >
+                    <br>
+                    <h4><strong>Trek Domane SLR 7 Gen 5 </strong></h4>
+                              <h5>$1,999.99 CAD</h5>
+                    <img class="img1" src="OIP (5).jpg">
+            </div>
+        <aside id="sidebar">
+        <table border="9">
+            <h3>Selection</h3>
+            <form>
+            <label for="sBike">Select Bike</label>
+           <input type="text" name="sBikes" id="sBike" list="bikes">
+           <datalist id="bikes">
+               <option value="Trek Domane SLR 7 Gen 5"></option>
+               <option value="Trek Domane SLR 6 Gen 4"></option>
+           </datalist> 
+           <br>
+           <br>
+            </form>
+            <tr>
+            <th>Height</th>
+            <th>Frame Size</th>
+            <th>Size</th>
+            </tr>
+            <tr>
+                <td>4'10-5'3</td>
+                <td>47cm - 53cm</td>
+                <td>XSmall</td>
+            </tr>
+            <tr>
+                <td>5'3-5'6</td>
+                <td>51cm - 53cm</td>
+                <td>Small</td>
+            </tr>
+            <tr>
+                <td>5'6-5'10</td>
+                <td>54cm - 55cm</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>5'9-6'0</td>
+                <td>56cm - 58cm</td>
+                <td>Large</td>
+            </tr>
+            <tr>
+                <td>6'0-6'4</td>
+                <td>59cm - 61cm</td>
+                <td>XLarge</td>
+            </tr>
+            <form>
+            </table>
+            <br>
+            <br>
+            <br>
+            <label for="size">Select Size</label>
+            <input type="text" name="size" id="size" list="sizes">
+            <datalist id="sizes">
+                <option value=""></option>
+                <option value="Small"></option>
+                <option value="Medium"></option>
+                <option value="Large"></option>
+                <option value="XLarge"></option>
+            </datalist>
+            <br>
+            <br>
+            <br>
+            <label for="color">Choose your frame color:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <br>
+            <br>
+            <caption><strong>WheelSize:</strong></caption>
+            <br>
+            <label for="wheelSize">26":</label>
+            <input type="checkbox" name="size" id="size" value="26">
+            <br>
+            <label for="wheelSize">27.5":</label>
+            <input type="checkbox" name="size" id="size" value="27">
+            <br>
+            <br>
+            
+            <input type="submit" name="Sbutton" id="Sbutton" value="Submit">
+            <input type="reset" name="Rbutton" id="Rbutton" value="Reset">
+        </aside>
+        </form>
+    </body>
+</html>

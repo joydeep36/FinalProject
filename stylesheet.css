@@ -1,0 +1,110 @@
+body {
+    background-color: #e4b867;
+    background-size: cover;
+  }
+  
+  header {
+    background-color: #e89608;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  nav {
+    background-color: #252525;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+  } 
+  
+  nav a:hover {
+    color: #91f23c;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #3d79ea;
+    border-radius: 45%; 
+  }
+
+  .img1 {
+    width: 200px;
+  }
+
+  h4 {
+    font-size: 150%;
+  }
+
+  h5 {
+    font-size: 120%;
+  }
+
+  .head1  {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #3d79ea;
+    border-radius: 45%; 
+  }
+
+  h3 a {
+    font-size: 40px;
+    color:#0c0000
+  }
+
+  .bike {
+    background-color: #fff;
+    margin-right: 800px;
+  }
+
+  .bike2 {
+    background-color: #fff;
+    margin-right: 800px;
+  }
+
+  
+ 
+   ul li {
+    color: rgb(0, 0, 0);
+    font-size: 20px ;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px;
+   }
+   
+ 
+
+  li {
+    background-color: beige; 
+
+
+  } 
+
+   h3 :hover {
+    color: #2de808;
+    
+  } 
+  
+ 
+  
+ 
+
